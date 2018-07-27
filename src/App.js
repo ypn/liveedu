@@ -4,15 +4,17 @@ import ThemeRoot from './themes/neymar/ThemeRoot';
 import './App.css';
 import { BrowserRouter as Router,Route,Redirect,Switch } from "react-router-dom";
 import Login from './themes/neymar/Login';
+import FrontendMaster from './themes/neymar/frontend_pages/FrontendMaster';
 
 
 const LoginPage = () => (
   <Login/>
 )
 
-const Home = () => (
-  <h1>Home</h1>
+const FrontendMasterPage = () => (
+  <FrontendMaster/>
 )
+
 
 const AdminRoot = () => (
   <ThemeRoot/>
@@ -24,7 +26,7 @@ class App extends Component {
     super(props);
 
     this.state = {
-      loggedIn:false
+      loggedIn:true
     }
 
   }
@@ -39,7 +41,7 @@ class App extends Component {
       <Router>
         {
           loggedIn ? (
-            <ThemeRoot/>
+            <FrontendMasterPage/>
           ):(
             <LoginPage/>
           )

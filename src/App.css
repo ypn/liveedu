@@ -7,6 +7,22 @@
   height: 80px;
 }
 
+.SearchBar-searchIconButton-78{
+  width:32px!important;
+  height:32px!important;
+  margin-right: -30px!important;
+}
+
+.SearchBar-iconButton-75{
+  width:32px!important;
+  height:32px!important;
+}
+
+.FrontendMaster-root-1 a{
+  text-decoration: none;
+  color:#fff;
+}
+
 .App-header {
   background-color: #222;
   height: 150px;
