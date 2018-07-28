@@ -20,6 +20,7 @@ import Grid from '@material-ui/core/Grid';
 import Avatar from '@material-ui/core/Avatar';
 import SearchBar from 'material-ui-search-bar';
 import {NavLink} from "react-router-dom";
+import Notifications from '@material-ui/icons/Notifications';
 
 
 import MainContent from './MainContent';
@@ -122,9 +123,10 @@ class FrontendMaster extends React.Component {
                 height:32
               }}
             />
-          <NavLink to="/live"><Button color="inherit">Live<Icon style={{marginLeft:3,color:'red'}}>surround_sound</Icon></Button></NavLink>
+          <NavLink to="/live"><Button color="inherit">trực tiếp<Icon style={{marginLeft:3,color:'red'}}>surround_sound</Icon></Button></NavLink>
             <NavLink to="/courses"><Button color="inherit">Khóa học</Button></NavLink>
             <NavLink to="/blogs"><Button color="inherit">Blogs</Button></NavLink>
+            <IconButton><Notifications style={{color:'#fff'}}/></IconButton>
             {auth && (
               <div>
                 <IconButton
